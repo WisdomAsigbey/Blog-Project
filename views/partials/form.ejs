@@ -1,0 +1,35 @@
+<form id="post-form" action="/create-post" method="POST">
+  <div class="mb-3">
+    <label for="post-title" class="form-label">Title</label>
+    <input
+      type="text"
+      id="post-title"
+      class="form-control"
+      name="title"
+      required
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="post-content" class="form-label">Content</label>
+    <textarea
+      id="post-content"
+      class="form-control"
+      rows="5"
+      name="content"
+      required
+    ></textarea>
+  </div>
+
+  <div class="mb-3">
+    <label for="post-category" class="form-label">Category</label>
+    <select id="post-category" class="form-select" name="category">
+      <option value="news">News</option>
+      <option value="farming">Farming</option>
+      <option value="technology">Technology</option>
+      <option value="lifestyle">Lifestyle</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100">Publish Post</button>
+</form>

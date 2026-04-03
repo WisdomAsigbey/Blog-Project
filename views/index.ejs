@@ -1,0 +1,25 @@
+
+<%- include('partials/header.ejs') %>
+    <main class="container my-5">
+      <div class="row">
+        <%- include('partials/sidebar.ejs') %>
+
+        <!-- MAIN CONTENT -->
+        <div class="col-lg-9 mx-auto">
+          <!-- CREATE POST CARD -->
+          <div class="card shadow-sm mb-5">
+            <div class="card-body p-4">
+              <h2 class="mb-4 text-center">Create a New Post</h2>
+
+              <%- include('partials/form.ejs') %>
+            </div>
+          </div>
+
+     <%- include('partials/post-grid.ejs') %>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer.ejs') %> <%- include('partials/scripts.ejs') %>
+  </body>
+</html>

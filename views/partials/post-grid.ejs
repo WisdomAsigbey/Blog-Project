@@ -1,0 +1,54 @@
+     <!-- POSTS GRID -->
+          <div id="post-list" class="row g-4">
+            <% if(typeof title !== "undefined" && typeof content !== "undefined" && typeof category !== "undefined") { %>
+              <div class="col-md-6 col-lg-4 post-column">
+                <div class="post-item" data-category="<%= category %>">
+                  <span class="post-category"><%= category %></span>
+                  <h3><%= title %></h3>
+                  <p><%= content %></p>
+                  <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-sm btn-warning edit-btn">Edit</button>
+                    <button class="btn btn-sm btn-danger delete-btn">Delete</button>
+                  </div>
+                </div>
+              </div>
+           <% }%>
+            <!-- Example initial posts -->
+            <div class="col-md-6 col-lg-4 post-column">
+              <div class="post-item" data-category="news">
+                <span class="post-category">News</span>
+                <h3>Welcome to the Blog</h3>
+                <p>
+                  This is an example news post to show the layout and filtering.
+                </p>
+                <div class="d-flex justify-content-between mt-3">
+                  <button class="btn btn-sm btn-warning edit-btn">Edit</button>
+                  <button class="btn btn-sm btn-danger delete-btn">Delete</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 post-column">
+              <div class="post-item" data-category="farming">
+                <span class="post-category">Farming</span>
+                <h3>Farming Tips</h3>
+                <p>Some quick tips to improve your farming productivity.</p>
+                <div class="d-flex justify-content-between mt-3">
+                  <button class="btn btn-sm btn-warning edit-btn">Edit</button>
+                  <button class="btn btn-sm btn-danger delete-btn">Delete</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 post-column">
+              <div class="post-item" data-category="technology">
+                <span class="post-category">Technology</span>
+                <h3>Tech in Agriculture</h3>
+                <p>How technology is transforming modern agriculture.</p>
+                <div class="d-flex justify-content-between mt-3">
+                  <button class="btn btn-sm btn-warning edit-btn">Edit</button>
+                  <button class="btn btn-sm btn-danger delete-btn">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>

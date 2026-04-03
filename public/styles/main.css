@@ -1,0 +1,151 @@
+/* ------------------------------
+   GLOBAL
+------------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero-section {
+  height: 45vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80")
+      center/cover no-repeat;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* ------------------------------
+   SIDEBAR
+------------------------------ */
+.sidebar {
+  border-radius: 12px;
+}
+
+.category-list li {
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.category-list li:hover {
+  background: #e9ecef;
+}
+
+.category-list li.active {
+  background: #0d6efd;
+  color: #fff;
+}
+
+/* ------------------------------
+   POST GRID + ANIMATIONS
+------------------------------ */
+.post-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Post title */
+.post-item h3 {
+  font-weight: 600;
+}
+
+/* Category badge */
+.post-category {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------
+   POST FORM CARD
+------------------------------ */
+.card {
+  border-radius: 12px;
+  border: none;
+}
+
+.card-body h2 {
+  font-weight: 700;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.footer-section {
+  background: #306e9b;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #0d6efd;
+  transform: translateY(-3px);
+}
+
+footer p {
+  margin: 5px 0;
+  color: #ccc;
+}
+
+/* ------------------------------
+   RESPONSIVE
+------------------------------ */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-section {
+    height: 35vh;
+  }
+}
